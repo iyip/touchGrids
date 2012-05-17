@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Touch and Gestures</title>
+    <link href="css/touchGrids.css" media="screen" rel="stylesheet" type="text/css" />
+
+    <!-- This is the icon that's used when the user adds the app to the home screen -->
+    <link rel="apple-touch-icon-precomposed" href="touchGrids.gif"/>
+    <!-- This is the favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+</head>
+<body>
+<div id="container">
+    <section id="overview" class="showing">
+        <!--<div class="toolbar">
+            <h1>Overview</h1>
+        </div>-->
+        <div class="blockContainer">
+            <!-- blocks generate by createBlocks js function -->
+        </div>
+        <div style="clear:both"></div>
+    </section>
+
+    <section id="detail" class="hidden">
+        <!--<div class="toolbar">
+            <a class="back" href="#overview">Back</a>
+            <h1>Detail</h1>
+        </div>-->
+        <div id="blockDetail"></div>
+        <div class="btnDiv"><a class="backBtn">Back</a></div>
+    </section>
+</div>
+<script>if ( typeof window.JSON === 'undefined' ) { document.write('<script src="javascript/lib/json2.js"><\/script>'); }</script>
+<script src="javascript/lib/zepto/zepto.js"></script>
+<script src="javascript/lib/zepto/event.js"></script>
+<script src="javascript/lib/zepto/touch.js"></script>
+<script src="javascript/lib/zepto/detect.js"></script>
+<script src="javascript/lib/zepto/gesture.js"></script>
+<script src="javascript/lib/zepto/data.js"></script>
+<script src="javascript/lib/zepto.history.js"></script>
+<script src="javascript/touchGrids.js"></script>
+
+</body>
+</html>

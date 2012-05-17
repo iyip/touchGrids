@@ -1,0 +1,139 @@
+body {
+    margin: 2px auto;
+    height: 100%;
+    overflow-x: hidden;
+    width: 100%;
+    background: rgb(242,249,254); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(242,249,254,1) 0%, rgba(214,240,253,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,249,254,1)), color-stop(100%,rgba(214,240,253,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(242,249,254,1) 0%,rgba(214,240,253,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(242,249,254,1) 0%,rgba(214,240,253,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(242,249,254,1) 0%,rgba(214,240,253,1) 100%); /* IE10+ */
+    background: linear-gradient(top, rgba(242,249,254,1) 0%,rgba(214,240,253,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f9fe', endColorstr='#d6f0fd',GradientType=0 ); /* IE6-9 */
+}
+
+section {
+  display: block;
+  left: 2px;
+  top:0;
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  z-index: -10;
+  -webkit-transform: translate3d(100%,0%,0%);
+  -moz-transform: translate3d(100%,0%,0%);
+  transform: translate3d(100%,0%,0%);
+
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+
+}
+
+.hidden {
+  -webkit-transform: translate3d(-100%, 0%, 0%);
+  -moz-transform: translate3d(-100%, 0%, 0%);
+  transform: translate3d(-100%, 0%, 0%);
+  opacity: 0;
+}
+
+.showing {
+  -webkit-transform: translate3d(0%,0%, 0%);
+  -moz-transform: translate3d(0%,0%, 0%);
+  transform: translate3d(0%,0%, 0%);
+  opacity: 1;
+  z-index: 1;
+}
+
+.block {
+  background: none repeat scroll 0% 0%;
+  width: 33.333%;
+  float: left;
+  text-align: center;
+  font-size:1em;
+  padding-top: 6px;
+}
+
+.block span {
+    font-size: 0.8em;
+}
+
+#blockDetail {
+    width: 100%;
+    height: 100%;
+    font-size:2em;
+    text-align: center;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.btnDiv {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.backBtn {
+    border: 1px solid lightgray;
+    border-radius: 6px 6px 6px 6px;
+    color: #5A79AD;
+    background-color: #e6e6fa;
+    font-size: 1.5em;
+    padding: 0 1em;
+    -webkit-box-shadow: 1px 1px 1px 1px #888888;
+    -moz-box-shadow: 1px 1px 1px 1px #888888;
+    box-shadow: 1px 1px 1px 1px #888888;
+}
+
+.toolbar {
+    -webkit-box-sizing: border-box;
+    border-bottom: 1px solid #2D3642;
+    height: 45px;
+    padding: 10px;
+    position: relative;
+    background: rgb(242,249,254); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(242,249,254,1) 0%, rgba(214,240,253,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,249,254,1)), color-stop(100%,rgba(214,240,253,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(242,249,254,1) 0%,rgba(214,240,253,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(242,249,254,1) 0%,rgba(214,240,253,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(242,249,254,1) 0%,rgba(214,240,253,1) 100%); /* IE10+ */
+    background: linear-gradient(top, rgba(242,249,254,1) 0%,rgba(214,240,253,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f9fe', endColorstr='#d6f0fd',GradientType=0 ); /* IE6-9 */
+}
+
+.toolbar > h1 {
+  color: #00008b;
+  font-size: 20px;
+  font-weight: bold;
+  height: 40px;
+  left: 50%;
+  margin: 1px 0px 0px -75px;
+  position: absolute;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.398438) 0px -1px 0px;
+  top: 10px;
+  width: 150px;
+}
+
+.back {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    max-width: 55px;
+    padding: 2px 10px;
+    position: absolute;
+    left: 6px;
+    right: 6px;
+    text-decoration: none;
+    text-indent: 8px;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 1px 1px 1px lightgray;
+    -moz-box-shadow: 1px 1px 1px 1px lightgray;
+    box-shadow: 1px 1px 1px 1px lightgray;
+}
