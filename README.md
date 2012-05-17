@@ -7,7 +7,7 @@ swipe down and pinch in. It also includes usages of zepto data api, zepto ajax a
 with [history.js](https://github.com/balupton/history.js). It works well on both iOS and Android.
 
 
-How to use
+How to use:
 -------------------------------------------------------------------------------------------------
 * On the overview page showing the 3 by 3 grid, tap into one grid to see the detail of the block.
 * On the detail page, swipe left, right, up and down to see the adjacent block.
